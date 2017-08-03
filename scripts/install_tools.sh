@@ -39,18 +39,18 @@ yum-install perl-Switch -y
 echo 'yum-install perl-Switch -y' >> $INSTALL_LOG
 yum install php php-mysql -y
 echo 'yum install php php-mysql -y' >> $INSTALL_LOG
-yum install libssh2
-echo 'yum install libssh2' >> $INSTALL_LOG
-yum install libssh2-devel
-echo 'yum install libssh2-devel' >> $INSTALL_LOG
-yum install php-pear
-echo 'yum install php-pear' >> $INSTALL_LOG
+yum install libssh2 -y
+echo 'yum install libssh2 -y' >> $INSTALL_LOG
+yum install libssh2-devel -y
+echo 'yum install libssh2-devel -y' >> $INSTALL_LOG
+yum install php-pear -y
+echo 'yum install php-pear -y' >> $INSTALL_LOG
 pecl channel-update pecl.php.net
 echo 'pecl channel-update pecl.php.net' >> $INSTALL_LOG
-yum install libssh2-1-dev
-echo 'yum install libssh2-1-dev' >> $INSTALL_LOG
-yum install php-devel
-echo 'yum install php-devel' >> $INSTALL_LOG
+yum install libssh2-1-dev -y
+echo 'yum install libssh2-1-dev -y' >> $INSTALL_LOG
+yum install php-devel -y
+echo 'yum install php-devel -y' >> $INSTALL_LOG
 pecl install -a ssh2
 echo 'pecl install -a ssh2' >> $INSTALL_LOG
 systemctl restart httpd.service
