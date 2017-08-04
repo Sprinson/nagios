@@ -13,6 +13,7 @@ echo '# TIME TO INSTALL THE USERS'
 echo '#######################################'
 echo
 read -n 1 -s -r -p "Press any key to continue"
+echo
 $INSTALL_SCRIPTS/install_users.sh
 echo
 echo '#######################################'
@@ -20,6 +21,7 @@ echo '# TIME TO INSTALL THE TOOLS'
 echo '#######################################'
 echo
 read -n 1 -s -r -p "Press any key to continue"
+echo
 $INSTALL_SCRIPTS/install_tools.sh
 echo
 echo '#######################################'
@@ -27,4 +29,5 @@ echo '# TIME TO INSTALL NAGIOS'
 echo '#######################################'
 echo
 read -n 1 -s -r -p "Press any key to continue"
+echo
 $INSTALL_SCRIPTS/install_nagios.sh 
