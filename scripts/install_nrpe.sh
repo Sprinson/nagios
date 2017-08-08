@@ -9,6 +9,9 @@ echo
 cd ~
 echo 'cd ~' >> $INSTALL_LOG
 
+yum install gcc glibc glibc-common gd gd-devel make net-snmp openssl-devel xinetd unzip -y
+echo 'yum install gcc glibc glibc-common gd gd-devel make net-snmp openssl-devel xinetd unzip -y' >> $INSTALL_LOG
+
 curl -L -O http://nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz
 echo 'curl -L -O http://nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz' >> $INSTALL_LOG
 
